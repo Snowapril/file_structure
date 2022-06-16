@@ -22,6 +22,7 @@ public:
 	inline void incrNumCreditHours(void);
 
 	void Print(std::ostream&, const char* label = 0) const;
+	ostream & PrintHeader (ostream &);
 
 	static int InitBuffer(DelimFieldBuffer&);
 	static int InitBuffer(LengthFieldBuffer&);

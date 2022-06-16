@@ -1,33 +1,36 @@
-// fixtext.h - Fixed-length Fields of fixed length records
+#pragma once
+// fixtext.h
 // Copyright 1997, Gregory A. Riccardi
 
 #ifndef FIXTEXT_H
 #define FIXTEXT_H
 
 #include <iostream>
+using namespace std;
 
 #ifndef FALSE
 #define FALSE (0)
 #define TRUE (1)
 #endif
 
-class FixedTextBuffer 
-// a buffer which holds a specific number of fixed sized text fields.
-{  public:
-	FixedTextBuffer (int maxFields, int maxChars = 1000); // construct with a maximum of maxFields
-	FixedTextBuffer (int numFields, int * FieldSize);
-		// construct with fields of specific size
-	int NumberOfFields () const; // return number of fields 
-	void Clear (); // clear field values from buffer
-	int AddField (int fieldSize);
-	int Read (std::istream &);
-	int Write (std::ostream &);
-	int Pack (const char *); // set the value of the next field of the buffer;
-	int Unpack (char *); // extract the value of the next field of the buffer
-	void Print (std::ostream &);
-	int Init (int numFields, int maxChars = 1000);
-	int Init (int numFields, int * fieldSize);
- private:
+class FixedTextBuffer
+	// a buffer which holds a specific number of fixed sized text fields.
+{
+public:
+	FixedTextBuffer(int maxFields, int maxChars = 1000); // construct with a maximum of maxFields
+	FixedTextBuffer(int numFields, int * FieldSize);
+	// construct with fields of specific size
+	int NumberOfFields() const; // return number of fields 
+	void Clear(); // clear field values from buffer
+	int AddField(int fieldSize);
+	int Read(istream &);
+	int Write(ostream &);
+	int Pack(const char *); // set the value of the next field of the buffer;
+	int Unpack(char *); // extract the value of the next field of the buffer
+	void Print(ostream &);
+	int Init(int numFields, int maxChars = 1000);
+	int Init(int numFields, int * fieldSize);
+private:
 	char * Buffer; // character array to hold field values
 	int BufferSize; // sum of the sizes of declared fields
 	int * FieldSize; // array to hold field sizes

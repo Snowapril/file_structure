@@ -1,0 +1,104 @@
+file names indfile.dat indfile.ind
+IndFile R[0] at recaddr 17
+IndFile R[1] at recaddr 59
+IndFile R[2] at recaddr 149
+IndFile R[3] at recaddr 274
+IndFile R[4] at recaddr 437
+IndFile R[5] at recaddr 633
+IndFile R[6] at recaddr 867
+IndFile R[7] at recaddr 1140
+IndFile R[8] at recaddr 1452
+IndFile R[9] at recaddr 1804
+
+Enter the last Student record
+Enter the identifier: 123141
+Enter the name: Jihong
+Enter the address: Busan
+Enter the first enroll date: 2022/01/03
+Enter the num credit hours: 100
+IndFile R[10] at recaddr 2187
+result of index write: 118
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+
+Looking for record with key:2312
+Student:        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+Enter the key for searching : 18807
+Student:        Identifier      '-858993460'
+                Name            ''
+                Address         ''
+           First Enroll Date    ''
+            Num Credit Hours    '-858993460'
+계속하려면 아무 키나 누르십시오 . . .

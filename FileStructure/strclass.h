@@ -1,7 +1,7 @@
 // strclass.h
 #ifndef STRCLASS_H
 #define STRCLASS_H
-
+using namespace std;
 // class string makes a C (null terminated) character array
 //   into a regular object, with 
 

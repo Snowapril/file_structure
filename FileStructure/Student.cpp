@@ -53,6 +53,12 @@ void Student::Print(std::ostream& stream, const char* label) const
 		<< "\t    Num Credit Hours	'"	<< numCreditHours	<< "'\n" << std::flush;
 }
 
+ostream& Student::PrintHeader(ostream& stream)
+{// print the report header for this account
+	stream << identifier << '\t' << name << endl;
+	return stream;
+}
+
 void Student::Clear(void)
 {
 	identifier = 0;

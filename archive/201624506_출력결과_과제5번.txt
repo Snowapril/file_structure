@@ -1,0 +1,61 @@
+Testing TextIndex Buffer
+Enter the file name:test
+
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 1
+the number of Person object records : 1
+Enter the identifier: 123
+Enter the name: 234
+Enter the address: 345
+Enter the first enroll date: 456
+Enter the num credit hours: 567
+Student:        Identifier      '123'
+                Name            '234'
+                Address         '345'
+           First Enroll Date    '456'
+            Num Credit Hours    '567'
+
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 2
+0000025C7CF73430
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 3
+TextIndexBuffer: KeySize 10 MaxKeys 3
+MaxBytes 46 BufferSize 0Fixed
+         FixedFieldBuffer :: Print()::max fields 5 and actual 0
+NextByte 0
+Buffer ''
+file names test.dat test.ind
+Create file 1
+Text Index max keys 10 num keys 1
+        Key[0] 123 RecAddr 17
+result of index write: 110
+
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 4
+
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 5
+
+
+Input record file name : test.dat
+Use existing file : test
+Read Index from Record File "test.dat"
+17 Student:     Identifier      '123'
+                Name            '234'
+                Address         '345'
+           First Enroll Date    '456'
+            Num Credit Hours    '567'
+
+Store index table into IndFile
+result of index write: 110
+Index saved at "indfile.ind"
+
+
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 6
+
+
+Input index file name : test
+Enter the key : 123
+select 123 at recaddr 17
+read result: 17
+17
+Select command 1: record input, 2. display, 3. write to file, 4. read from file, 5. make index file from data file, 6. use index file for reading data file, 7. Quit => 7
+
+G:\내 드라이브\University\Lectures\4학년\파일구조\FileStructure\x64\Debug\FileStructure.exe (process 17812) exited with code 0.
+Press any key to close this window . . .

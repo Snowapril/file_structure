@@ -8,13 +8,13 @@ String::String ()
 
 String::String (const String& str) //copy constructor
 {
-	string = strdup (str . string);
+	string = _strdup (str . string);
 	MaxLength = strlen (string);
 }
 
 String::String (const char * str) // create from C string
 {
-	string = strdup (str);
+	string = _strdup (str);
 	MaxLength = strlen (string);
 }
 
@@ -27,7 +27,7 @@ String::~String ()
 
 String::operator char * ()
 {
-	return strdup(string);
+	return _strdup(string);
 }
 
 
@@ -37,7 +37,7 @@ String & String::operator = (const String & str)
 	if (strlen (str.string) >= MaxLength)
 	{
 		delete string;
-		string = strdup(str.string);
+		string = _strdup(str.string);
 		MaxLength = strlen(string);
 	}
 	strcpy (string, str.string);
@@ -55,4 +55,4 @@ int String::operator == (const String & str) const
 {	return strcmp(string, str.string) == 0;}
 
 char * String::str () const // return a copy of the string
-{	return strdup(string);}
+{	return _strdup(string);}

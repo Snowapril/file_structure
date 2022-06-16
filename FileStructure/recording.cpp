@@ -2,6 +2,7 @@
 #include "recording.h"
 #include <strstream>
 #include <string.h>
+#pragma warning(disable : 4996)
 
 Recording::Recording()
 {
@@ -12,22 +13,22 @@ Recording::Recording()
 	Label[0] = 0;
 }
 
-Recording::Recording(char * label, char * idNum, char * title,
-	char * composer, char * artist)
+Recording::Recording(const char* label, const char* idNum, const char* title,
+	const char* composer, const char* artist)
 {
 	strcpy(Label, label); strcpy(IdNum, idNum);
 	strcpy(Title, title); strcpy(Composer, composer);
 	strcpy(Artist, artist);
 }
 
-char * Recording::Key() const
+char* Recording::Key() const
 {// produce key as concatenation of Label and IdNum
 	ostrstream key;
 	key << Label << IdNum << ends;
 	return key.str();
 }
 
-int Recording::Pack(IOBuffer & Buffer) const
+int Recording::Pack(IOBuffer& Buffer) const
 {// return TRUE if all succeed, FALSE o/w
 	int numBytes;
 	Buffer.Clear();
@@ -44,7 +45,7 @@ int Recording::Pack(IOBuffer & Buffer) const
 	return TRUE;
 }
 
-int Recording::Unpack(IOBuffer & Buffer)
+int Recording::Unpack(IOBuffer& Buffer)
 {// unpack with maximum size, and add null termination to strings
 	int numBytes;
 	numBytes = Buffer.Unpack(IdNum, 6);
@@ -65,7 +66,7 @@ int Recording::Unpack(IOBuffer & Buffer)
 	return TRUE;
 }
 
-void Recording::Print(ostream & stream, char * label) const
+void Recording::Print(ostream& stream, char* label) const
 {
 	stream << Label << '|' << IdNum << '|' << Title << '|'
 		<< Composer << '|' << Artist;

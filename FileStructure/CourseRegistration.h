@@ -29,6 +29,8 @@ public:
 	int Unpack(IOBuffer&);
 	int Pack(IOBuffer&) const;
 
+	std::string Key() const;
+
 	int courseIdentifier;
 	int studentIdentifier;
 	int numCreditHours;

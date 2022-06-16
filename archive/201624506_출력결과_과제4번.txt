@@ -1,0 +1,46 @@
+main()::create file 1
+Recordin2 R[0] at recaddr 0
+Recordin2 R[1] at recaddr 17
+Recordin2 R[2] at recaddr 59
+Recordin2 R[3] at recaddr 149
+Recordin2 R[4] at recaddr 274
+Recordin2 R[5] at recaddr 437
+Recordin2 R[6] at recaddr 633
+Recordin2 R[7] at recaddr 867
+Recordin2 R[8] at recaddr 1140
+Recordin2 R[9] at recaddr 1452
+Text Index max keys 10 num keys 10
+        Key[0] 139201 RecAddr 1140
+        Key[1] 18807 RecAddr 437
+        Key[2] 2312 RecAddr 0
+        Key[3] 23699 RecAddr 59
+        Key[4] 245 RecAddr 1452
+        Key[5] 2626 RecAddr 17
+        Key[6] 31809 RecAddr 867
+        Key[7] 3795 RecAddr 149
+        Key[8] 38358 RecAddr 274
+        Key[9] 75016 RecAddr 633
+Retrieve 139201 at recaddr 1140
+read result : 1140Key(139201) read result :     Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+Enter the key for searching : 23699
+Retrieve 23699 at recaddr 59
+read result: 59
+Retrieved data :        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+Enter the key for searching : 245
+Retrieve 245 at recaddr 1452
+read result: 1452
+Retrieved data :        Identifier      '2312'
+                Name            'LON'
+                Address         'Romeo and Juliet'
+           First Enroll Date    '2022/03/01'
+            Num Credit Hours    '10'
+Enter the key for searching : ^Z
+계속하려면 아무 키나 누르십시오 . . .

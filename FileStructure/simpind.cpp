@@ -1,9 +1,9 @@
 //simpind.tc
+/*
 #include "simpind.h"
+#include "indbuff.h"
 #include <iostream>
-#ifndef SIMPIND_TC
-#define SIMPIND_TC
-using namespace std;
+
 template <class keyType>
 SimpleIndex<keyType>::SimpleIndex(int maxKeys, int unique)
 	: NumKeys(0), Keys(0), RecAddrs(0)
@@ -113,5 +113,4 @@ int SimpleIndex<keyType>::Init(const int maxKeys, const int unique)
 	RecAddrs = new int[maxKeys];
 	return 1;
 }
-
-#endif
+*/

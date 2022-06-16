@@ -1,5 +1,6 @@
 ﻿#include "CourseRegistration.h"
 #include <string>
+#include <strstream>
 
 std::ostream& operator<<(std::ostream& stream, const CourseRegistration& course)
 {
@@ -101,4 +102,11 @@ int CourseRegistration::Unpack(IOBuffer& Buffer)
 	result = result && Buffer.Unpack(tempBuffer);
 	courseGrade = atof(tempBuffer);
 	return result;
+}
+
+std::string CourseRegistration::Key() const
+{
+	std::ostrstream key;
+	key << courseIdentifier << studentIdentifier << ends;
+	return key.str();
 }
